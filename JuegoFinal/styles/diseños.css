@@ -15,6 +15,20 @@ body{
 }
 
 canvas {
-    margin-top: 3%;
     background: rgb(48, 255, 196);
+}
+
+#vidas {
+    margin-top: 3%;
+    height: 50px;
+    width: auto;
+}
+
+.corazon {
+    height: 50px;
+    width: 50px;
+}
+
+#puntaje {
+    color: white;
 }

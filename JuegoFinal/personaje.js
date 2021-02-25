@@ -13,12 +13,15 @@ var p1 = {
     y: 10
 };
 
-var vidas = 5;
+var vidas = 15;
 
 var widthPesonaje = 34;
 var heightPersonaje = 54;
 var personaje = new Image();
 personaje.src = "personaje.png"
+
+var n = 0;
+var l = document.getElementById("puntaje");
 
 update();
 
@@ -268,14 +271,25 @@ function loop() {
   requestAnimationFrame(loop);
 }
 
-func
-
 loop();
 
 function update() {
     requestAnimationFrame(update, cnv);
     render();
     move();
-    console.log(vidas);
+    updateVidas();
    // draw();
 }
+
+function updateVidas(){
+  var str = "";
+  for(let i=0; i<vidas; i++){
+    str+="<img src=\"vida.png\" class=\"corazon\">";
+  }
+  document.getElementById("vidas").innerHTML = str;
+}
+
+window.setInterval(function(){
+  l.innerHTML = "Puntuacion: " + n;
+  n++;
+},250);
