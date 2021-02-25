@@ -1,0 +1,34 @@
+
+body{
+    background: #000;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    background: rgb(48, 255, 196);
+}
+
+#vidas {
+    margin-top: 3%;
+    height: 50px;
+    width: auto;
+}
+
+.corazon {
+    height: 50px;
+    width: 50px;
+}
+
+#puntaje {
+    color: white;
+}
