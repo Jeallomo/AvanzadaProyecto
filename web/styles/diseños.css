@@ -15,7 +15,7 @@ body{
 }
 
 canvas {
-    background: rgb(48, 255, 196);
+    background-image: url('../Imagenes/Sala.jpg');
 }
 
 #vidas {

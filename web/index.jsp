@@ -16,6 +16,18 @@
     <div id="Ins">
         <input value="" class="butonIns" type="button" id="boton1" onclick="show('contenido1','back')">
     </div>
+    
+    <div id="Punt">
+        <input value="" class="butonPunt" type="button" onclick="show('contenido2','back2')">
+        
+    </div>
+
+    <div id="CajaPunt">
+        <img src= "Imagenes/Win.jpg" class="oculto" id="contenido2">
+        <div id="Back2">
+            <input value="" class="btonback2" id="back2" onclick="show('contenido2','back2')">
+        </div>
+    </div>
 
     <div id="imIns">
         <img src= "Imagenes/Ins.jpg" class="oculto" id="contenido1">

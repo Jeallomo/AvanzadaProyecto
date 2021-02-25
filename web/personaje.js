@@ -95,16 +95,16 @@ function render() {
 
     //Manejo de colisiones contra la pared del videojuego
 
-    if (p1.x < 0) {
+    if (p1.x < 100) {
         p1.x += 2;
     }
-    if (p1.x + 34 > cnv.width) {
+    if (p1.x + 34 > cnv.width-100) {
         p1.x -= 2;
     }
-    if (p1.y + 54 > cnv.height) {
+    if (p1.y + 54 > cnv.height-90) {
         p1.y -= 2;
     }
-    if (p1.y < 0) {
+    if (p1.y < 90) {
         p1.y += 2;
     }
 }
