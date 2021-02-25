@@ -12,6 +12,11 @@ var p1 = {
     x: 10,
     y: 10
 };
+
+var vidas = 5;
+
+var widthPesonaje = 34;
+var heightPersonaje = 54;
 var personaje = new Image();
 personaje.src = "personaje.png"
 
@@ -222,6 +227,11 @@ Ball.prototype.collisionDetect = function() {
         
       }
     }
+
+    //Colision con el jugador
+    if (balls[j].x > p1.x && balls[j].x < p1.x + widthPesonaje && balls[j].y > p1.y && balls[j].y < p1.y + heightPersonaje) {
+      vidas--;
+    }
   }
 };
 
@@ -258,11 +268,14 @@ function loop() {
   requestAnimationFrame(loop);
 }
 
+func
+
 loop();
 
 function update() {
     requestAnimationFrame(update, cnv);
     render();
     move();
+    console.log(vidas);
    // draw();
 }
