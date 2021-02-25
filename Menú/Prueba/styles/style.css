@@ -1,0 +1,96 @@
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #00539F;
+  text-shadow: 3px 3px 1px black;
+}
+p {
+  color: black;	
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+html {
+  background-image: url(" ../Imagenes/fondo.jpg");
+}
+
+th{
+	background-color: #35a8df;
+	text-align: center;
+}
+
+.butonJ{
+  background-image:url(" ../Imagenes/5.png");
+  background-repeat:no-repeat;
+  height:190px;
+  width:538px;
+  border-radius: 800px;
+  background-position:center;
+  background-color: transparent;
+  border-color: transparent;
+  
+}
+
+.butonJ:hover{
+  background-image:url(" ../Imagenes/6.png")
+}
+
+#jugar{
+  margin-left: 750px;
+  margin-top: -400px;
+  border-radius: 800px;
+}
+
+.butonIns{
+  background-image:url(" ../Imagenes/7.png");
+  background-repeat:no-repeat;
+  height:190px;
+  width:538px;
+  border-radius: 800px;
+  background-position:center;
+  background-color: transparent;
+  border-color: transparent;
+  
+}
+
+.butonIns:hover{
+  background-image:url(" ../Imagenes/8.png")
+}
+
+#Ins{
+  margin-left: 750px;
+  margin-top: -30px;
+  border-radius: 600px;
+}
+
+#imIns{
+  display: flex;
+  align-items: center;
+  margin-top: -680px;
+}
+.oculto {
+  display:none;
+}
+
+#Back{
+margin-top:-20px;
+margin-left: -173px;
+}
+
+.btonback{
+  display: none;
+  background-image:url(" ../Imagenes/bc.png");
+  background-repeat:no-repeat;
+  height:591px;
+  width:184px;
+  border-radius: 800px;
+  background-position:center;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+
