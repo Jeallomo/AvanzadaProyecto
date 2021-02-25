@@ -1,27 +1,50 @@
-<%-- 
-    Document   : index
-    Created on : 15/02/2021, 12:00:08 PM
-    Author     : Jesus Lozada
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Hello :D!</title>
+        <link href="styles\style.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="scrip.js"></script>
     </head>
+
     <body>
-    <div class="pantalla">
-        <div id="vidas"></div>
-        <div id="puntaje">Puntuacion: 0</div>
-        <canvas id="canvas" height="700" width="1200" ></canvas>
+    <img src="Imagenes/1.gif" >
+
+
+    <div id="jugar">
+        <input value="" class="butonJ" type="submit" onclick="game()">
     </div>
-    <script src="personaje.js"></script>
-        <form action="ServletPuntaje" method="POST" id="form" name="form">
-            <input type="hidden" name="puntaje" value="15">
-            <input type="hidden" name="nombre" value="nombre">
-            <input type="submit" value="enviar">
-        </form>
+
+    <div id="Ins">
+        <input value="" class="butonIns" type="button" id="boton1" onclick="show('contenido1','back')">
+    </div>
+
+    <div id="imIns">
+        <img src= "Imagenes/Ins.jpg" class="oculto" id="contenido1">
+
+        <div id="Back">
+            <input value="" class="btonback" id="back" onclick="show('contenido1','back')">
+        </div>
+    </div>  
     </body>
+
+    <script>
+        function game(){
+            location.href = "../" + "FinalProjectAvanzada/" + "game.jsp";
+        }
+        
+        function show(id,id1){
+          
+           console.log("macon de mierda");
+           var objeto=document.getElementById(id)
+           var objeto1=document.getElementById(id1)
+           if(objeto.style.display=="block"){
+            objeto.style.display="none";
+            objeto1.style.display="none";
+           }
+           else{
+            objeto.style.display="block";
+            objeto1.style.display="block";
+           }
+               
+   };
+   </script> 
 </html>

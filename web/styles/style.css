@@ -67,19 +67,30 @@ th{
   border-radius: 600px;
 }
 
-table {
-  border-collapse: collapse;
+#imIns{
+  display: flex;
+  align-items: center;
+  margin-top: -680px;
+}
+.oculto {
+  display:none;
 }
 
-table, th, td {
-  border: 2px solid black;
+#Back{
+margin-top:-20px;
+margin-left: -173px;
 }
 
-div.centrarT{
-text-align: center;
+.btonback{
+  display: none;
+  background-image:url(" ../Imagenes/bc.png");
+  background-repeat:no-repeat;
+  height:591px;
+  width:184px;
+  border-radius: 800px;
+  background-position:center;
+  background-color: transparent;
+  border-color: transparent;
 }
 
-div.centrarT table {
-margin: 0 auto;
-text-align: left;
-}
+
